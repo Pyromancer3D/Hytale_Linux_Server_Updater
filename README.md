@@ -32,8 +32,8 @@ WantedBy=default.target
 ## Example of .env Environment File used in systemd service configuration
 ```
 # .env 
-HYTALE_JAR="/GameServers/hytale/SERVERS/hypetale/HytaleServer.jar"
-HYTALE_ASSETS="/GameServers/hytale/VERSIONS/2026.01.28-87d03be09/Assets.zip"
-HYTALE_BACKUP="/GameServers/hytale/SERVERS/hypetale/backups"
+HYTALE_JAR="/Full/path/to/server/jar/HytaleServer.jar"
+HYTALE_ASSETS="/Full/path/to/your/hytale/downloader/2026.01.28-87d03be09/Assets.zip"
+HYTALE_BACKUP="/Full/path/to/server/jar/hypetale/backups"
 ```
 _Notes: As mentioned above in the Things to know section, the only line required in the .env file is the HYTALE_ASSETS line in order to be updated by the script. The other entries can simply be included in the ExecStart if desired. We use the .env file to alter parameters however to avoid needing to do a systemctl daemon-reload every time an update happens._
